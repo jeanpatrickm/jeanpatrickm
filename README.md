@@ -3,8 +3,8 @@
 Hi! My name is Jean Patrick, and I am a Computer Engineering student
 
 
-<img src="https://github-readme-stats.vercel.app/api?username=jeanpatrickm&show_icons=true&theme=holi&hide_title=true" alt="Anurag's GitHub stats" style="height: 200px;"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeanpatrickm&layout=compact&theme=holi&hide_title=true" alt="Top Langs" style="height: 200px;"/>
+<img src="https://github-readme-stats.vercel.app/api?username=jeanpatrickm&show_icons=true&theme=holi&hide_title=true" alt="Anurag's GitHub stats" style="height: 160ex;"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeanpatrickm&layout=compact&theme=holi&hide_title=true" alt="Top Langs" style="height: 160em;"/>
 
 
 
