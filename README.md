@@ -1,7 +1,8 @@
 ## Hi! my name is Jean Patrick, I'm a FullStack Developer.
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=jeanpatrickm&show_icons=true&theme=holi)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jeanpatrickm&layout=compact&theme=holi)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jeanpatrickm&langs_count=8&theme=holi)
+
 
 ## technologies
 
