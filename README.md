@@ -1,10 +1,10 @@
-## Hi! My name is Jean Patrick, and I am a Computer Engineering student
+## 🌌 Hi! My name is Jean Patrick, and I am a Computer Engineering student
 
-<div style="height: 180em;">
+<div style="width: 48%;">
   <img src="https://github-readme-stats.vercel.app/api?username=jeanpatrickm&show_icons=true&theme=holi" alt="Anurag's GitHub stats" />
 </div>
 
-<div style="height: 180em;">
+<div style="width: 48%;">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeanpatrickm&layout=compact&theme=holi" alt="Top Langs" />
 </div>
 
