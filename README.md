@@ -1,15 +1,16 @@
-## 🌌 Hi! My name is Jean Patrick, and I am a Computer Engineering student
+## 🌌 About Me
 
-<div style="width: 48%;">
-  <img src="https://github-readme-stats.vercel.app/api?username=jeanpatrickm&show_icons=true&theme=holi" alt="Anurag's GitHub stats" />
-</div>
+Hi! My name is Jean Patrick, and I am a Computer Engineering student
 
-<div style="width: 48%;">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeanpatrickm&layout=compact&theme=holi" alt="Top Langs" />
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <img src="https://github-readme-stats.vercel.app/api?username=jeanpatrickm&show_icons=true&theme=holi" alt="GitHub stats" style="height: 180em;"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeanpatrickm&layout=compact&theme=holi" alt="Top Langs" style="height: 180em;"/>
 </div>
 
 
 ## 💻 Technologies
+
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Jean-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
@@ -19,7 +20,8 @@
 </div>
   
   ## 🌌 Social Medias
- 
+
+  
 <div> 
   <a href="https://www.linkedin.com/in/jeanpatrickm/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
   <a href="https://www.instagram.com/jeanpatrickm_/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
