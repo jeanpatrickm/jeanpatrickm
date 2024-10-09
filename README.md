@@ -1,19 +1,19 @@
-## 🌌 About Me
+## <h2> 🌌 About Me </h2>
 
-Hi! My name is Jean Patrick, and I am a Computer Engineering student
+<h3> Hi! My name is Jean Patrick, and I am a Computer Engineering student </h3>
 
 <div style="display: flex; justify-content: space-between;">
 
-  <img src="https://github-readme-stats.vercel.app/api?username=jeanpatrickm&show_icons=true&theme=holi&hide_title=true" alt="Anurag's GitHub stats" style="width: 48%;"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=jeanpatrickm&show_icons=true&theme=holi&hide_title=true" alt="Anurag's GitHub stats" style="width: 50%;"/>
   
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeanpatrickm&layout=compact&theme=holi&hide_title=true" alt="Top Langs" style="width: 46%;"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeanpatrickm&layout=compact&theme=holi&hide_title=true" alt="Top Langs" style="width: 48%;"/>
 
 </div>
 
 
 
 
-## 💻 Technologies
+## <h2> 💻 Technologies </h2>
 
 
 <div style="display: inline_block"><br>
@@ -24,7 +24,7 @@ Hi! My name is Jean Patrick, and I am a Computer Engineering student
 </div>
 
   
-  ## 📱 Social Medias
+  ## <h2> 📱 Social Medias </h2>
 
   
 <div> 
