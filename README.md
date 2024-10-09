@@ -2,17 +2,10 @@
 
 Hi! My name is Jean Patrick, and I am a Computer Engineering student
 
-<div style="display: flex; justify-content: space-between; align-items: flex-start;">
 
-  <div style="height: 200px;">
-    <img src="https://github-readme-stats.vercel.app/api?username=jeanpatrickm&show_icons=true&theme=holi" alt="Anurag's GitHub stats" style="width: 25%; height: 180em; object-fit: cover;" />
-  </div>
+<img src="https://github-readme-stats.vercel.app/api?username=jeanpatrickm&show_icons=true&theme=holi&hide_title=true" alt="Anurag's GitHub stats" style="height: 200px;"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeanpatrickm&layout=compact&theme=holi&hide_title=true" alt="Top Langs" style="height: 200px;"/>
 
-  <div style="height: 200px;">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeanpatrickm&layout=compact&theme=holi" alt="Top Langs" style="width: 25%; height: 180em%; object-fit: cover;" />
-  </div>
-
-</div>
 
 
 ## 💻 Technologies
@@ -24,6 +17,7 @@ Hi! My name is Jean Patrick, and I am a Computer Engineering student
   <img align="center" alt="Jean-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
   <img align="center" alt="Jean-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
 </div>
+
   
   ## 📱 Social Medias
 
