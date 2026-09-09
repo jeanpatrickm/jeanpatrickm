@@ -5,7 +5,7 @@ const output = getOption('--output') || '.github/assets/activity-pulse.svg';
 const username = process.env.GITHUB_USER || process.env.GITHUB_REPOSITORY_OWNER || 'jeanpatrickm';
 const token = process.env.GITHUB_TOKEN;
 
-const COLORS = ['#171320', '#4b3b68', '#7358a0', '#a58bd0', '#d9cdf2'];
+const COLORS = ['#1e1e2e', '#45475a', '#7f849c', '#b4befe', '#cba6f7'];
 
 function getOption(name) {
   const index = process.argv.indexOf(name);
@@ -119,7 +119,7 @@ function renderCalendar(calendar) {
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
-  <text x="${width - 2}" y="11" text-anchor="end" fill="#9f8bd2" font-family="Arial, sans-serif" font-size="9" letter-spacing="1">${escapeXml(calendar.totalContributions)} CONTRIBUTIONS</text>
+  <text x="${width - 2}" y="11" text-anchor="end" fill="#b4befe" font-family="Arial, sans-serif" font-size="9" letter-spacing="1">${escapeXml(calendar.totalContributions)} CONTRIBUTIONS</text>
   ${cells.join('\n  ')}
 </svg>
 `;
