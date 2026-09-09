@@ -3,7 +3,7 @@ name: Generate README
 on:
   push:
     branches: [main]
-    paths: ['readme.source.md']
+    paths: ['readme.source.md', 'scripts/**', '.github/workflows/readme-aura.yml']
   schedule:
     - cron: '0 6 * * *'
   workflow_dispatch:
@@ -16,6 +16,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Generate activity calendar
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: ${{ github.repository_owner }}
+        run: node scripts/generate-activity.mjs --output .github/assets/activity-pulse.svg
 
       - name: Generate README
         uses: collectioneur/readme-aura@main
