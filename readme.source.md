@@ -106,9 +106,17 @@
         <img src=".github/assets/activity-pulse.svg" width={780} height={120} style={{ marginTop: 8 }} />
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', height: 200, paddingTop: 10, boxSizing: 'border-box', position: 'relative', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', height: 200, paddingTop: 10, boxSizing: 'border-box', position: 'relative' }}>
         <span style={{ display: 'flex', color: 'rgba(203,166,247,0.78)', fontSize: 10, fontWeight: 700, letterSpacing: 4, marginBottom: 16 }}>PRIMARY DEPLOYMENTS</span>
-        <span style={{ display: 'flex', color: 'rgba(166,173,200,0.68)', fontSize: 11, letterSpacing: 1.5 }}>OPEN A DEPLOYMENT BELOW</span>
+        <div style={{ display: 'flex', gap: 14, flex: 1 }}>
+          {[
+            { name: 'Morzen', description: 'Primary project', language: 'Project', accent: '#89b4fa' },
+            { name: 'portfolio', description: 'Personal portfolio', language: 'Web', accent: '#cba6f7' },
+            { name: 'start_page', description: 'Start page', language: 'Web', accent: '#b4befe' },
+          ].map(function(repository) {
+            return <div key={repository.name} style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: '15px 16px', borderRadius: 12, background: 'rgba(203,166,247,0.045)', border: '1px solid rgba(203,166,247,0.2)' }}><span style={{ display: 'flex', color: '#cdd6f4', fontSize: 14, fontWeight: 700, marginBottom: 9 }}>{repository.name}</span><span style={{ display: 'flex', color: 'rgba(166,173,200,0.68)', fontSize: 10, lineHeight: 1.45 }}>{repository.description}</span><div style={{ display: 'flex', alignItems: 'center', marginTop: 'auto', paddingTop: 12, gap: 7 }}><span style={{ display: 'flex', width: 7, height: 7, borderRadius: 4, background: repository.accent }} /><span style={{ display: 'flex', color: 'rgba(205,214,244,0.76)', fontSize: 10, fontWeight: 600 }}>{repository.language}</span><span style={{ display: 'flex', color: 'rgba(166,173,200,0.54)', fontSize: 10, marginLeft: 'auto' }}>OPEN ↗</span></div></div>;
+          })}
+        </div>
       </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', height: 120, alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
@@ -129,35 +137,8 @@
 })()
 ~~~
 
-~~~aura width=250 height=76 link="https://github.com/jeanpatrickm/Morzen" inline align=center
-(function() {
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: 250, height: 76, background: '#181825', border: '1px solid rgba(137,180,250,0.45)', borderRadius: 12 }}>
-      <span style={{ display: 'flex', color: '#cdd6f4', fontSize: 16, fontWeight: 700 }}>Morzen</span>
-      <span style={{ display: 'flex', color: '#89b4fa', fontSize: 9, letterSpacing: 2, marginTop: 7 }}>OPEN REPOSITORY ↗</span>
-    </div>
-  );
-})()
-~~~
-
-~~~aura width=250 height=76 link="https://github.com/jeanpatrickm/portfolio" inline align=center
-(function() {
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: 250, height: 76, background: '#181825', border: '1px solid rgba(203,166,247,0.45)', borderRadius: 12 }}>
-      <span style={{ display: 'flex', color: '#cdd6f4', fontSize: 16, fontWeight: 700 }}>portfolio</span>
-      <span style={{ display: 'flex', color: '#cba6f7', fontSize: 9, letterSpacing: 2, marginTop: 7 }}>OPEN REPOSITORY ↗</span>
-    </div>
-  );
-})()
-~~~
-
-~~~aura width=250 height=76 link="https://github.com/jeanpatrickm/start_page" inline align=center
-(function() {
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: 250, height: 76, background: '#181825', border: '1px solid rgba(180,190,254,0.45)', borderRadius: 12 }}>
-      <span style={{ display: 'flex', color: '#cdd6f4', fontSize: 16, fontWeight: 700 }}>start_page</span>
-      <span style={{ display: 'flex', color: '#b4befe', fontSize: 9, letterSpacing: 2, marginTop: 7 }}>OPEN REPOSITORY ↗</span>
-    </div>
-  );
-})()
-~~~
+<p align="center">
+  <a href="https://github.com/jeanpatrickm/Morzen">Morzen</a> ·
+  <a href="https://github.com/jeanpatrickm/portfolio">portfolio</a> ·
+  <a href="https://github.com/jeanpatrickm/start_page">start_page</a>
+</p>
