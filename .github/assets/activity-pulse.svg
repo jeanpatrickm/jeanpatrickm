@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="780" height="120" viewBox="0 0 780 120">
-  <text x="778" y="11" text-anchor="end" fill="#b4befe" font-family="Arial, sans-serif" font-size="9" letter-spacing="1">124 CONTRIBUTIONS</text>
+  <text x="778" y="11" text-anchor="end" fill="#b4befe" font-family="Arial, sans-serif" font-size="9" letter-spacing="1">125 CONTRIBUTIONS</text>
   <rect x="48" y="24" width="9" height="9" rx="2" fill="#1e1e2e"/>
   <rect x="48" y="37" width="9" height="9" rx="2" fill="#1e1e2e"/>
   <rect x="48" y="50" width="9" height="9" rx="2" fill="#1e1e2e"/>
@@ -368,7 +368,7 @@
   <rect x="724" y="24" width="9" height="9" rx="2" fill="#1e1e2e"/>
   <rect x="724" y="37" width="9" height="9" rx="2" fill="#1e1e2e"/>
   <rect x="724" y="50" width="9" height="9" rx="2" fill="#1e1e2e"/>
-  <rect x="724" y="63" width="9" height="9" rx="2" fill="#b4befe"/>
+  <rect x="724" y="63" width="9" height="9" rx="2" fill="#cba6f7"/>
   <rect x="724" y="76" width="9" height="9" rx="2" fill="#1e1e2e"/>
   <rect x="724" y="89" width="9" height="9" rx="2" fill="#1e1e2e"/>
   <rect x="724" y="102" width="9" height="9" rx="2" fill="#1e1e2e"/>
