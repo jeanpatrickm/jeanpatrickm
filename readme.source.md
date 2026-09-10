@@ -18,12 +18,6 @@
         { name: 'HTML', percentage: 6 },
         { name: 'Other', percentage: 3 },
       ];
-  var profileName = (github && github.user && (github.user.name || github.user.login)) || 'Jean Patrick';
-  var profileBio = (github && github.user && github.user.bio) || 'Software Engineer · Computer Engineering Student';
-  var profileAvatar = (github && github.user && github.user.avatarUrl) || 'https://github.com/jeanpatrickm.png';
-  var profileTags = (github && github.languages && github.languages.length > 0)
-    ? github.languages.slice(0, 4).map(function(language) { return language.name; })
-    : bannerLanguages.slice(0, 4);
   function contactButton(icon, text, href, width) {
     return (
       <a href={href} style={{ display: 'flex', width: width, height: 40 }}>
@@ -107,16 +101,12 @@
         <circle cx="766" cy="177" r="2" fill="rgba(180,190,254,0.45)" />
       </svg>
 
-      <div style={{ display: 'flex', alignItems: 'center', height: 205, position: 'relative' }}>
-        <div style={{ display: 'flex', width: 100, height: 100, borderRadius: 50, background: 'linear-gradient(135deg, #6622ee, #0088ff)', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-          <img src={profileAvatar} width={90} height={90} style={{ borderRadius: 45 }} />
-        </div>
-        <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 28, gap: 8 }}>
-          <span style={{ display: 'flex', color: '#ffffff', fontSize: 38, fontWeight: 800, letterSpacing: -1, lineHeight: 1 }}>{profileName}</span>
-          <span style={{ display: 'flex', color: 'rgba(180,165,255,0.88)', fontSize: 15, fontWeight: 400, letterSpacing: 0.3 }}>{profileBio}</span>
-          <div style={{ display: 'flex', gap: 8, marginTop: 6, flexWrap: 'wrap' }}>
-            {profileTags.map(function(tag, index) { return <span key={tag + '-' + index} style={{ display: 'flex', padding: '4px 12px', borderRadius: 20, background: 'rgba(80,40,220,0.18)', border: '1px solid rgba(100,70,240,0.32)', color: 'rgba(205,195,255,0.88)', fontSize: 11, fontWeight: 600 }}>{tag}</span>; })}
-          </div>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: 205, position: 'relative' }}>
+        <span style={{ display: 'flex', color: '#cdd6f4', fontSize: 38, fontWeight: 800, letterSpacing: 2, lineHeight: 1 }}>Jean Patrick</span>
+        <span style={{ display: 'flex', color: '#cba6f7', fontSize: 12, fontWeight: 500, letterSpacing: 0.5, marginTop: 13 }}>{bannerLanguages.join(' · ')}</span>
+        <span style={{ display: 'flex', color: 'rgba(186,194,222,0.64)', fontSize: 10, fontWeight: 500, letterSpacing: 2.5, marginTop: 13 }}>SOFTWARE ENGINEER · COMPUTER ENGINEERING STUDENT</span>
+        <div style={{ display: 'flex', gap: 8, marginTop: 19 }}>
+          {bannerLanguages.map(function(language) { return <span key={language} style={{ display: 'flex', padding: '4px 11px', borderRadius: 20, background: 'rgba(203,166,247,0.1)', border: '1px solid rgba(203,166,247,0.3)', color: '#cdd6f4', fontSize: 10, fontWeight: 600 }}>{language}</span>; })}
         </div>
       </div>
 
