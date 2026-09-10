@@ -18,6 +18,12 @@
         { name: 'HTML', percentage: 6 },
         { name: 'Other', percentage: 3 },
       ];
+  var profileName = (github && github.user && (github.user.name || github.user.login)) || 'Jean Patrick';
+  var profileBio = (github && github.user && github.user.bio) || 'Software Engineer · Computer Engineering Student';
+  var profileAvatar = (github && github.user && github.user.avatarUrl) || 'https://github.com/jeanpatrickm.png';
+  var profileTags = (github && github.languages && github.languages.length > 0)
+    ? github.languages.slice(0, 4).map(function(language) { return language.name; })
+    : bannerLanguages.slice(0, 4);
   function contactButton(icon, text, href, width) {
     return (
       <a href={href} style={{ display: 'flex', width: width, height: 40 }}>
@@ -50,6 +56,30 @@
       position: 'relative', overflow: 'hidden', borderRadius: 18,
       border: '1px solid rgba(203,166,247,0.22)',
     }}>
+      <style>{`
+        @keyframes aura-drift-left {
+          0%, 100% { transform: translateX(0px); opacity: 0.62; }
+          50% { transform: translateX(150px); opacity: 0.92; }
+        }
+        @keyframes aura-drift-right {
+          0%, 100% { transform: translateX(0px); opacity: 0.46; }
+          50% { transform: translateX(-180px); opacity: 0.78; }
+        }
+        @keyframes aura-drift-center {
+          0%, 100% { transform: translateX(0px); opacity: 0.30; }
+          50% { transform: translateX(110px); opacity: 0.62; }
+        }
+        @keyframes aura-pulse {
+          0%, 100% { transform: scale(1); opacity: 0.34; }
+          50% { transform: scale(1.18); opacity: 0.58; }
+        }
+        #aura-glow-1 { animation: aura-drift-left 9s ease-in-out infinite; }
+        #aura-glow-2 { animation: aura-drift-right 12s ease-in-out infinite; }
+        #aura-glow-3 { animation: aura-drift-center 8s ease-in-out infinite; }
+        #aura-glow-4 { animation: aura-drift-left 13s ease-in-out infinite reverse; }
+        #aura-glow-5 { animation: aura-pulse 7s ease-in-out infinite; }
+      `}</style>
+
       <svg width="860" height="980" style={{ position: 'absolute', top: 0, left: 0 }}>
         <defs>
           <pattern id="aura-grid" width="30" height="30" patternUnits="userSpaceOnUse">
@@ -66,21 +96,27 @@
           </radialGradient>
         </defs>
         <rect width="860" height="980" fill="url(#aura-grid)" />
-        <ellipse cx="160" cy="280" rx="330" ry="240" fill="url(#aura-purple)" />
-        <ellipse cx="730" cy="130" rx="280" ry="220" fill="url(#aura-blue)" />
-        <ellipse cx="560" cy="760" rx="320" ry="220" fill="url(#aura-purple)" opacity="0.18" />
+        <ellipse id="aura-glow-1" cx="160" cy="280" rx="330" ry="240" fill="url(#aura-purple)" />
+        <ellipse id="aura-glow-2" cx="730" cy="130" rx="280" ry="220" fill="url(#aura-blue)" />
+        <ellipse id="aura-glow-3" cx="430" cy="370" rx="260" ry="180" fill="url(#aura-blue)" opacity="0.36" />
+        <ellipse id="aura-glow-4" cx="560" cy="760" rx="320" ry="220" fill="url(#aura-purple)" opacity="0.22" />
+        <ellipse id="aura-glow-5" cx="220" cy="790" rx="210" ry="160" fill="url(#aura-purple)" opacity="0.28" />
         <path d="M25 55V27H53" fill="none" stroke="rgba(180,190,254,0.58)" strokeWidth="2" />
         <path d="M807 925H835V897" fill="none" stroke="rgba(180,190,254,0.58)" strokeWidth="2" />
         <circle cx="86" cy="83" r="2" fill="rgba(180,190,254,0.55)" />
         <circle cx="766" cy="177" r="2" fill="rgba(180,190,254,0.45)" />
       </svg>
 
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: 205, position: 'relative' }}>
-        <span style={{ display: 'flex', color: '#cdd6f4', fontSize: 38, fontWeight: 800, letterSpacing: 2, lineHeight: 1 }}>Jean Patrick</span>
-        <span style={{ display: 'flex', color: '#cba6f7', fontSize: 12, fontWeight: 500, letterSpacing: 0.5, marginTop: 13 }}>TypeScript · JavaScript · Next.js · React · Node.js</span>
-        <span style={{ display: 'flex', color: 'rgba(186,194,222,0.64)', fontSize: 10, fontWeight: 500, letterSpacing: 2.5, marginTop: 13 }}>SOFTWARE ENGINEER · COMPUTER ENGINEERING STUDENT</span>
-        <div style={{ display: 'flex', gap: 8, marginTop: 19 }}>
-          {bannerLanguages.map(function(language) { return <span key={language} style={{ display: 'flex', padding: '4px 11px', borderRadius: 20, background: 'rgba(203,166,247,0.1)', border: '1px solid rgba(203,166,247,0.3)', color: '#cdd6f4', fontSize: 10, fontWeight: 600 }}>{language}</span>; })}
+      <div style={{ display: 'flex', alignItems: 'center', height: 205, position: 'relative' }}>
+        <div style={{ display: 'flex', width: 100, height: 100, borderRadius: 50, background: 'linear-gradient(135deg, #6622ee, #0088ff)', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+          <img src={profileAvatar} width={90} height={90} style={{ borderRadius: 45 }} />
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 28, gap: 8 }}>
+          <span style={{ display: 'flex', color: '#ffffff', fontSize: 38, fontWeight: 800, letterSpacing: -1, lineHeight: 1 }}>{profileName}</span>
+          <span style={{ display: 'flex', color: 'rgba(180,165,255,0.88)', fontSize: 15, fontWeight: 400, letterSpacing: 0.3 }}>{profileBio}</span>
+          <div style={{ display: 'flex', gap: 8, marginTop: 6, flexWrap: 'wrap' }}>
+            {profileTags.map(function(tag, index) { return <span key={tag + '-' + index} style={{ display: 'flex', padding: '4px 12px', borderRadius: 20, background: 'rgba(80,40,220,0.18)', border: '1px solid rgba(100,70,240,0.32)', color: 'rgba(205,195,255,0.88)', fontSize: 11, fontWeight: 600 }}>{tag}</span>; })}
+          </div>
         </div>
       </div>
 
