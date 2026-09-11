@@ -162,9 +162,3 @@
   );
 })()
 ~~~
-
-<p align="center">
-  <a href="https://github.com/jeanpatrickm/Morzen">Morzen</a> ·
-  <a href="https://github.com/jeanpatrickm/portfolio">portfolio</a> ·
-  <a href="https://github.com/jeanpatrickm/start_page">start_page</a>
-</p>
